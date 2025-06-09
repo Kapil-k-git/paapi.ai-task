@@ -1057,7 +1057,6 @@ const CommonSectionPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Dynamic Section Content */}
             {renderSectionContent()}
 
             {/* Footer Component */}
