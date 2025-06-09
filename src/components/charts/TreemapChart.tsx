@@ -25,7 +25,7 @@ interface CustomizedContentProps {
 const TREEMAP_COLORS = ['#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4', '#84cc16', '#f97316'];
 
 const CustomizedContent: React.FC<CustomizedContentProps> = (props) => {
-  const { root, depth, x, y, width, height, index, payload, colors } = props;
+  const {depth, x, y, width, height, index, payload, colors } = props;
   
   if (!x || !y || !width || !height || !payload) return null;
   

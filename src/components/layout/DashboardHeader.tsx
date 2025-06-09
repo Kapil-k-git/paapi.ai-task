@@ -5,7 +5,6 @@ import { Menu, Bell, RefreshCw, Search } from 'lucide-react';
 import type { DashboardHeaderProps } from '@/types/dashboard';
 
 export const DashboardHeader: React.FC<DashboardHeaderProps> = ({
-  sidebarOpen,
   setSidebarOpen,
   selectedTimeRange,
   setSelectedTimeRange,

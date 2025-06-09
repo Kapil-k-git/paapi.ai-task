@@ -20,7 +20,7 @@ import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   LineChart, Line, PieChart, Pie, Cell, AreaChart, Area, ScatterChart, Scatter,
   RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Treemap,
-  FunnelChart, Funnel, LabelList, ComposedChart, ZAxis
+  FunnelChart, Funnel, LabelList, ComposedChart
 } from 'recharts';
 
 // Import reusable components
