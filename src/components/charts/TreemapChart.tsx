@@ -67,7 +67,6 @@ export const ProductTreemap: React.FC<ChartProps<ProductDistributionData>> = ({
       <Treemap
         data={data}
         dataKey="size"
-        ratio={4/3}
         stroke="#fff"
         fill="#3b82f6"
         content={<CustomizedContent colors={TREEMAP_COLORS} />}

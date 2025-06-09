@@ -267,7 +267,6 @@ const ProductTreemap: React.FC = () => (
       <Treemap
         data={sampleData.productDistribution}
         dataKey="size"
-        ratio={4/3}
         stroke="#fff"
         fill="#3b82f6"
       />
