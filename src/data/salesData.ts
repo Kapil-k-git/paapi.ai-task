@@ -1,4 +1,3 @@
-// ===== src/data/salesData.ts =====
 import type { 
     MonthlyRevenueData, 
     SalesTrendsData,
@@ -13,7 +12,6 @@ import type {
     ColorScheme
   } from '@/types'
   
-  // 1. Monthly Revenue Data - Bar Chart
   export const monthlyRevenueData: MonthlyRevenueData[] = [
     { month: 'Jan', revenue: 45000, target: 40000, growth: 12.5 },
     { month: 'Feb', revenue: 52000, target: 45000, growth: 15.6 },
@@ -29,7 +27,6 @@ import type {
     { month: 'Dec', revenue: 89000, target: 85000, growth: 8.5 }
   ];
   
-  // 2. Sales Trends Data - Line Chart
   export const salesTrendsData: SalesTrendsData[] = [
     { date: '2024-01', sales: 1200, leads: 1800, conversion: 66.7 },
     { date: '2024-02', sales: 1350, leads: 1950, conversion: 69.2 },
@@ -45,7 +42,6 @@ import type {
     { date: '2024-12', sales: 2400, leads: 3100, conversion: 77.4 }
   ];
   
-  // 3. Product Categories Data - Pie Chart
   export const productCategoriesData: ProductCategoryData[] = [
     { name: 'Electronics', value: 35, sales: 850000, growth: 15.2 },
     { name: 'Clothing', value: 25, sales: 620000, growth: 8.7 },
@@ -54,7 +50,6 @@ import type {
     { name: 'Books & Media', value: 8, sales: 195000, growth: 5.3 }
   ];
   
-  // 4. Cumulative Growth Data - Area Chart
   export const cumulativeGrowthData: CumulativeGrowthData[] = [
     { month: 'Jan', current: 45000, previous: 38000, difference: 7000 },
     { month: 'Feb', current: 97000, previous: 82000, difference: 15000 },
@@ -70,7 +65,6 @@ import type {
     { month: 'Dec', current: 792000, previous: 678000, difference: 114000 }
   ];
   
-  // 5. Price vs Units Data - Scatter Chart
   export const priceVsUnitsData: PriceVsUnitsData[] = [
     { price: 10, units: 1200, product: 'Basic Package', revenue: 12000 },
     { price: 25, units: 800, product: 'Standard Package', revenue: 20000 },
@@ -84,7 +78,6 @@ import type {
     { price: 1000, units: 15, product: 'Diamond Package', revenue: 15000 }
   ];
   
-  // 6. Regional Sales Data - Donut Chart
   export const regionalSalesData: RegionalSalesData[] = [
     { region: 'North America', value: 40, sales: 2400000, customers: 12500 },
     { region: 'Europe', value: 30, sales: 1800000, customers: 9800 },
@@ -93,7 +86,6 @@ import type {
     { region: 'Africa & Middle East', value: 3, sales: 180000, customers: 1800 }
   ];
   
-  // 7. Performance Metrics Data - Radar Chart
   export const performanceMetricsData: PerformanceMetricsData[] = [
     { metric: 'Revenue Growth', value: 85, fullMark: 100, target: 80 },
     { metric: 'Customer Satisfaction', value: 92, fullMark: 100, target: 90 },
@@ -105,7 +97,6 @@ import type {
     { metric: 'Brand Awareness', value: 76, fullMark: 100, target: 80 }
   ];
   
-  // 8. Product Distribution Data - Treemap Chart
   export const productDistributionData: ProductDistributionData[] = [
     { name: 'Laptops', size: 2400, sales: 2400000, units: 4800 },
     { name: 'Smartphones', size: 2200, sales: 2200000, units: 8800 },
@@ -119,7 +110,6 @@ import type {
     { name: 'Audio Systems', size: 200, sales: 200000, units: 800 }
   ];
   
-  // 9. Sales Funnel Data - Funnel Chart
   export const salesFunnelData: SalesFunnelData[] = [
     { name: 'Website Visitors', value: 10000, fill: '#8884d8', percentage: 100 },
     { name: 'Leads Generated', value: 6500, fill: '#83a6ed', percentage: 65 },
@@ -129,7 +119,6 @@ import type {
     { name: 'Closed Won', value: 1200, fill: '#ffc658', percentage: 12 }
   ];
   
-  // 10. Revenue & Profit Data - Composed Chart
   export const revenueProfitData: RevenueProfitData[] = [
     { month: 'Jan', revenue: 45000, profit: 13500, margin: 30, costs: 31500 },
     { month: 'Feb', revenue: 52000, profit: 15600, margin: 30, costs: 36400 },
@@ -145,9 +134,6 @@ import type {
     { month: 'Dec', revenue: 89000, profit: 26700, margin: 30, costs: 62300 }
   ];
   
-  // Additional Datasets for Enhanced Analytics
-  
-  // Customer Demographics Data
   export const customerDemographicsData = [
     { ageGroup: '18-25', count: 1250, percentage: 15.2 },
     { ageGroup: '26-35', count: 2890, percentage: 35.1 },
@@ -156,7 +142,6 @@ import type {
     { ageGroup: '56+', count: 580, percentage: 7.0 }
   ];
   
-  // Top Selling Products Data
   export const topSellingProductsData = [
     { product: 'iPhone 15 Pro', sales: 125000, units: 2500, rating: 4.8 },
     { product: 'MacBook Air M2', sales: 98000, units: 980, rating: 4.9 },
@@ -168,7 +153,6 @@ import type {
     { product: 'Surface Laptop', sales: 38000, units: 380, rating: 4.5 }
   ];
   
-  // Monthly Sales by Channel Data
   export const channelSalesData = [
     { month: 'Jan', online: 28000, retail: 12000, mobile: 5000 },
     { month: 'Feb', online: 32000, retail: 14000, mobile: 6000 },
@@ -184,7 +168,6 @@ import type {
     { month: 'Dec', online: 56000, retail: 24000, mobile: 9000 }
   ];
   
-  // Customer Acquisition Cost Data
   export const customerAcquisitionData = [
     { channel: 'Social Media', cost: 45, customers: 850, efficiency: 18.9 },
     { channel: 'Google Ads', cost: 65, customers: 1200, efficiency: 18.5 },
@@ -194,7 +177,6 @@ import type {
     { channel: 'Direct Traffic', cost: 0, customers: 380, efficiency: 0 }
   ];
   
-  // Market Comparison Data
   export const marketComparisonData = [
     { competitor: 'Our Company', marketShare: 23.5, revenue: 2400000, growth: 15.2 },
     { competitor: 'Competitor A', marketShare: 28.2, revenue: 2880000, growth: 8.7 },
@@ -203,7 +185,6 @@ import type {
     { competitor: 'Others', marketShare: 13.2, revenue: 1350000, growth: 3.2 }
   ];
   
-  // Seasonal Trends Data
   export const seasonalTrendsData = [
     { season: 'Q1 Winter', sales2023: 180000, sales2024: 195000, growth: 8.3 },
     { season: 'Q2 Spring', sales2023: 220000, sales2024: 245000, growth: 11.4 },
@@ -211,7 +192,6 @@ import type {
     { season: 'Q4 Fall', sales2023: 320000, sales2024: 360000, growth: 12.5 }
   ];
   
-  // Color Schemes
   export const COLORS: ColorScheme = [
     '#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D'
   ];
@@ -236,7 +216,6 @@ import type {
     indigo: ['#6366f1', '#4f46e5']
   };
   
-  // Export combined sales data object
   export const salesData = {
     monthlyRevenue: monthlyRevenueData,
     salesTrends: salesTrendsData,
@@ -248,7 +227,6 @@ import type {
     productDistribution: productDistributionData,
     salesFunnel: salesFunnelData,
     revenueProfit: revenueProfitData,
-    // Additional datasets
     customerDemographics: customerDemographicsData,
     topSellingProducts: topSellingProductsData,
     channelSales: channelSalesData,
@@ -257,7 +235,6 @@ import type {
     seasonalTrends: seasonalTrendsData
   };
   
-  // Data summary statistics
   export const dataSummary = {
     totalDatasets: 16,
     totalDataPoints: 147,
@@ -308,5 +285,4 @@ import type {
     }, {});
   };
   
-  // Export default
   export default salesData;

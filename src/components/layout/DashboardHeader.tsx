@@ -31,7 +31,6 @@ export const DashboardHeader: React.FC<DashboardHeaderProps> = ({
         </div>
         
         <div className="flex items-center space-x-1 sm:space-x-2 lg:space-x-4 flex-shrink-0">
-          {/* Search - Hidden on small screens */}
           <div className="hidden xl:flex items-center bg-gray-100 rounded-lg px-3 py-2">
             <Search className="h-4 w-4 text-gray-500 mr-2" />
             <input 

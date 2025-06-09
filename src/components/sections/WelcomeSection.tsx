@@ -1,4 +1,3 @@
-// ===== src/components/sections/WelcomeSection.tsx - Fixed Quote Errors =====
 'use client'
 
 import React from 'react';

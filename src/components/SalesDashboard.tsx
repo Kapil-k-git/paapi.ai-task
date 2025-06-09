@@ -1,4 +1,3 @@
-// ===== src/components/SalesDashboard.tsx - Refactored with Reusable Components =====
 'use client'
 
 import React, { useState } from 'react';
@@ -15,7 +14,6 @@ import {
   Settings
 } from 'lucide-react';
 
-// Import Recharts components
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer,
   LineChart, Line, PieChart, Pie, Cell, AreaChart, Area, ScatterChart, Scatter,
@@ -23,7 +21,6 @@ import {
   FunnelChart, Funnel, LabelList, ComposedChart
 } from 'recharts';
 
-// Import reusable components
 import DashboardHeader from './layout/DashboardHeader';
 import Sidebar from './layout/Sidebar';
 import WelcomeSection from './sections/WelcomeSection';
@@ -32,10 +29,8 @@ import { ChartsGrid, ChartRow } from './sections/ChartsGrid';
 import DashboardFooter from './layout/DashboardFooter';
 import ChartContainer from './ui/ChartContainer';
 
-// Import types
 import type { StatCardProps, NavigationItem } from '@/types/dashboard';
 
-// Sample data (same as before)
 const sampleData = {
   monthlyRevenue: [
     { month: 'Jan', revenue: 45000, target: 40000 },
@@ -115,7 +110,6 @@ const sampleData = {
 
 const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#8884D8', '#82CA9D'];
 
-// Utility functions
 const formatCurrency = (value: number): string => {
   return new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -125,7 +119,6 @@ const formatCurrency = (value: number): string => {
   }).format(value);
 };
 
-// Individual Chart Components (same as before but using ChartContainer)
 const SalesBarChart: React.FC = () => (
   <ChartContainer title="Monthly Revenue vs Target">
     <ResponsiveContainer width="100%" height="100%">
@@ -305,12 +298,10 @@ const RevenueComposedChart: React.FC = () => (
   </ChartContainer>
 );
 
-// Main Dashboard Component
 const SalesDashboard: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
   const [selectedTimeRange, setSelectedTimeRange] = useState<string>('12M');
 
-  // Configuration data
   const timeRanges = ['7D', '1M', '3M', '6M', '12M', '2Y'];
 
   const stats: StatCardProps[] = [
@@ -323,14 +314,14 @@ const SalesDashboard: React.FC = () => {
   ];
 
   const navigationItems: NavigationItem[] = [
-    { name: 'Overview', icon: TrendingUp, href: '#overview', active: true },
-    { name: 'Revenue', icon: DollarSign, href: '#revenue', active: false, badge: 3 },
-    { name: 'Analytics', icon: BarChart3, href: '#analytics', active: false },
-    { name: 'Customers', icon: Users, href: '#customers', active: false, badge: 12 },
-    { name: 'Products', icon: ShoppingCart, href: '#products', active: false },
-    { name: 'Reports', icon: PieChartIcon, href: '#reports', active: false },
-    { name: 'Performance', icon: Activity, href: '#performance', active: false },
-    { name: 'Settings', icon: Settings, href: '#settings', active: false }
+    { name: 'Overview', icon: TrendingUp, href: 'sections/overview', active: true },
+    { name: 'Revenue', icon: DollarSign, href: 'sections/revenue', active: false, badge: 3 },
+    { name: 'Analytics', icon: BarChart3, href: 'sections/analytics', active: false },
+    { name: 'Customers', icon: Users, href: 'sections/customers', active: false, badge: 12 },
+    { name: 'Products', icon: ShoppingCart, href: 'sections/products', active: false },
+    { name: 'Reports', icon: PieChartIcon, href: 'sections/reports', active: false },
+    { name: 'Performance', icon: Activity, href: 'sections/performance', active: false },
+    { name: 'Settings', icon: Settings, href: 'sections/settings', active: false }
   ];
 
   return (

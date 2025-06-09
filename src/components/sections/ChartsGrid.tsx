@@ -14,7 +14,6 @@ const ChartsGrid: React.FC<ChartsGridProps> = ({ children }) => {
   );
 };
 
-// Chart Row Component
 interface ChartRowProps {
   children: React.ReactNode;
   columns?: 1 | 2;
